@@ -1,0 +1,28 @@
+{
+  "demand": 1000,
+  "machines": [
+    {
+      "name": "Machine_A",
+      "max_hours_per_day": 10,
+      "production_rate": 50,
+      "cost_per_hour": 20
+    },
+    {
+      "name": "Machine_B",
+      "max_hours_per_day": 8,
+      "production_rate": 60,
+      "cost_per_hour": 25
+    },
+    {
+      "name": "Machine_C",
+      "max_hours_per_day": 6,
+      "production_rate": 40,
+      "cost_per_hour": 15
+    }
+  ],
+  "nonlinear_params": {
+    "Machine_A": { "threshold_hours": 8, "penalty_coeff": 2.0 },
+    "Machine_B": { "threshold_hours": 7, "penalty_coeff": 1.5 },
+    "Machine_C": { "threshold_hours": 6, "penalty_coeff": 1.0 }
+  }
+}
